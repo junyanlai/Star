@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="dist/demo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <!--[if lt IE 9]>
+    <link href="dist/mm-vertical.css" rel="stylesheet" type="text/css"/>
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -28,19 +29,31 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.4.1/packaged/jquery.noty.packaged.min.js"></script>
+	
+    <script type="text/jscript">
+    
+   		function setHtmle(){
+			
+		  $.post("https://www.baidu.com",function(result){
+			$("#NR").html(result);
+			
+		  });
+	} 
+   
+    
+    
+    
+    </script>
 
-<script type="text/javascript">
-
-alert("预估六月一号 可以完成全部功能 （-_-|| S B hello ）");
-</script>
-
+	
+	
   </head>
 
   <body>
-
+	 <!--头部菜单 开始 -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+     
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -51,7 +64,7 @@ alert("预估六月一号 可以完成全部功能 （-_-|| S B hello ）");
           <a class="navbar-brand" href="index.html">metisMenu</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -61,41 +74,21 @@ alert("预估六月一号 可以完成全部功能 （-_-|| S B hello ）");
               <ul class="dropdown-menu">
                 <li><a href="mm-vertical.html">Vertical Menu</a></li>
                 <li><a href="mm-horizontal.html">Horizontal Menu</a></li>
-                <li><a href="mm-folder.html">Folder View</a></li>
-                <li><a href="mm-vertical-hover.html">Hover Option For Desktop</a></li>
-                <li><a href="mm-zurb.html">Foundation | Zurb</a></li>
-                <li><a href="mm-animate.html">Animate</a></li>
-                <li><a href="mm-event.html">Event</a></li>
-                <li><a href="mm-event2.html">Event 2</a></li>
-                <li><a href="mm-dispose.html">Stop & Start metisMenu</a></li>
-                <li><a href="mm-ajax.html">Ajax</a></li>
-                <li><a href="mm-faq.html">FAQ</a></li>
+            
               </ul>
             </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Admin Templates <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="http://chl.onokumus.com" target="_blank">Chaldene Admin</a></li>
-                <li><a href="http://elk.onokumus.com" target="_blank">Elektron Admin</a></li>
-                <li><a href="http://onokumus.github.io/twbuttons/" target="_blank">twbuttons</a></li>
-              </ul>
-            </li>
-
-            <li><a href="http://onokumus.com" target="_blank">onokumus</a></li>
-
+			
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container-fluid -->
     </nav>
+ <!--头部菜单 结束 -->
+ 
 
-<link href="dist/mm-vertical.css" rel="stylesheet" type="text/css"/>
 <div class="container">
    <div class="row">
+	
+	 <!--左边菜单 开始 -->
      <aside class="col-md-3">
        <nav class="sidebar-nav">
          <ul class="metismenu" id="menu1">
@@ -123,26 +116,23 @@ alert("预估六月一号 可以完成全部功能 （-_-|| S B hello ）");
              </ul>
            </li>
            <li>
-             <a class="has-arrow" href="#" aria-expanded="false">Menu 0</a>
+             <a class="has-arrow" href="#" aria-expanded="false">首页</a>
              <ul aria-expanded="false">
-               <li><a href="#">item 0.1</a></li>
+               <li><a href="#" onclick="setHtmle()" >测试链接</a></li>
                <li><a href="#">item 0.2</a></li>
-               <li><a href="http://onokumus.com">onokumus</a></li>
                <li><a href="#">item 0.4</a></li>
              </ul>
            </li>
            <li id="removable">
              <a class="has-arrow" href="#" aria-expanded="false">Menu 1</a>
-             <ul aria-expanded="false">
+             
+			 <ul aria-expanded="false">
                <li><a href="#">item 1.1</a></li>
                <li><a href="#">item 1.2</a></li>
                <li>
                  <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
                  <ul aria-expanded="false">
                    <li><a href="#">item 1.3.1</a></li>
-                   <li><a href="#">item 1.3.2</a></li>
-                   <li><a href="#">item 1.3.3</a></li>
-                   <li><a href="#">item 1.3.4</a></li>
                  </ul>
                </li>
                <li><a href="#">item 1.4</a></li>
@@ -150,283 +140,43 @@ alert("预估六月一号 可以完成全部功能 （-_-|| S B hello ）");
                  <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
                  <ul aria-expanded="false">
                    <li><a href="#">item 1.5.1</a></li>
-                   <li><a href="#">item 1.5.2</a></li>
-                   <li><a href="#">item 1.5.3</a></li>
-                   <li><a href="#">item 1.5.4</a></li>
                  </ul>
                </li>
              </ul>
+			 
            </li>
            <li>
              <a class="has-arrow" href="#" aria-expanded="false">Menu 2</a>
              <ul aria-expanded="false">
                <li><a href="#">item 2.1</a></li>
-               <li><a href="#">item 2.2</a></li>
-               <li><a href="#">item 2.3</a></li>
-               <li><a href="#">item 2.4</a></li>
              </ul>
            </li>
          </ul>
        </nav>
      </aside>
-     <div class="col-md-9">
-       <h3>Auto Collapse
-         <small>default</small>
-       </h3>
-       <div class="panel panel-default">
-         <div class="panel-heading">
-           Code
-           <span class="pull-right">
-             <span class="fa fa-code"></span>
-           </span>
-         </div>
-         <div class="panel-body">
-<pre><code class="language-html">&lt;script&gt;
-  $(function () {
-
-      $('#menu1').metisMenu();
-
-  });
-&lt;/script&gt;
-</code></pre>
-          <p>
-            <br>
-            <a class="btn btn-info btn-lg" href="css/mm-vertical.css" target="_top">Download CSS File</a>
-          </p>
-         </div>
+	<!--左边菜单 结束-->
+		 
+	 <!--右部 显示内容 开始-->
+     <div class="col-md-9" id="NR">
+     
+       <!--	<iframe  id="kk"></iframe>
+       <div class="jumbotron">
+          <h1>Hello, world!</h1>
+          <p>...</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
        </div>
+        -->
+        
      </div>
+	 <!--右部 显示内容 结束-->
    </div>
  </div>
-
  <hr>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <nav class="sidebar-nav">
-            <ul class="metismenu" id="menu2">
-              <li>
-                <a class="has-arrow" href="#">
-                  <span class="fa fa-fw fa-github fa-lg"></span>
-                  metisMenu
-                </a>
-                <ul aria-expanded="true">
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu">
-                      <span class="fa fa-fw fa-code-fork"></span> Fork
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu">
-                      <span class="fa fa-fw fa-star"></span> Star
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu/issues">
-                      <span class="fa fa-fw fa-exclamation-triangle"></span> Issues
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 0</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 0.1</a></li>
-                  <li><a href="#">item 0.2</a></li>
-                  <li><a href="http://onokumus.com">onokumus</a></li>
-                  <li><a href="#">item 0.4</a></li>
-                </ul>
-              </li>
-              <li id="removable">
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 1</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 1.1</a></li>
-                  <li><a href="#">item 1.2</a></li>
-                  <li>
-                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
-                    <ul aria-expanded="false">
-                      <li><a href="#">item 1.3.1</a></li>
-                      <li><a href="#">item 1.3.2</a></li>
-                      <li><a href="#">item 1.3.3</a></li>
-                      <li><a href="#">item 1.3.4</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">item 1.4</a></li>
-                  <li>
-                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
-                    <ul aria-expanded="false">
-                      <li><a href="#">item 1.5.1</a></li>
-                      <li><a href="#">item 1.5.2</a></li>
-                      <li><a href="#">item 1.5.3</a></li>
-                      <li><a href="#">item 1.5.4</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 2</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 2.1</a></li>
-                  <li><a href="#">item 2.2</a></li>
-                  <li><a href="#">item 2.3</a></li>
-                  <li><a href="#">item 2.4</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-9">
-          <h3>No Collapse</h3>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              Code
-              <span class="pull-right">
-                <span class="fa fa-code"></span>
-              </span>
-            </div>
-            <div class="panel-body">
-<pre><code class="language-html">&lt;script&gt;
-  $(function () {
-
-      $('#menu2').metisMenu({ toggle: false });
-
-  });
-&lt;/script&gt;
-</code></pre>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="container" dir="rtl">
-      <div class="row ">
-        <div class="col-md-9">
-          <h3 id="rtlh3">RTL SUPPORT <small>RTL</small></h3>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              Code
-              <span class="pull-right">
-                <span class="fa fa-code"></span>
-              </span>
-            </div>
-            <div class="panel-body" dir="ltr">
-<pre><code class="language-html">&lt;body dir=&quot;rtl&quot;&gt;
-...
-&lt;script&gt;
-  $(function () {
-
-      $('#menu3').metisMenu();
-
-  });
-&lt;/script&gt;
-</code></pre>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <nav class="sidebar-nav">
-            <ul class="metismenu" id="menu3">
-              <li>
-                <a class="has-arrow" href="#">
-                  <span class="fa fa-fw fa-github fa-lg"></span>
-                  metisMenu
-                </a>
-                <ul aria-expanded="true">
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu">
-                      <span class="fa fa-fw fa-code-fork"></span> Fork
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu">
-                      <span class="fa fa-fw fa-star"></span> Star
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/onokumus/metisMenu/issues">
-                      <span class="fa fa-fw fa-exclamation-triangle"></span> Issues
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 0</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 0.1</a></li>
-                  <li><a href="#">item 0.2</a></li>
-                  <li><a href="http://onokumus.com">onokumus</a></li>
-                  <li><a href="#">item 0.4</a></li>
-                </ul>
-              </li>
-              <li id="removable">
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 1</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 1.1</a></li>
-                  <li><a href="#">item 1.2</a></li>
-                  <li>
-                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
-                    <ul aria-expanded="false">
-                      <li><a href="#">item 1.3.1</a></li>
-                      <li><a href="#">item 1.3.2</a></li>
-                      <li><a href="#">item 1.3.3</a></li>
-                      <li><a href="#">item 1.3.4</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">item 1.4</a></li>
-                  <li>
-                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
-                    <ul aria-expanded="false">
-                      <li><a href="#">item 1.5.1</a></li>
-                      <li><a href="#">item 1.5.2</a></li>
-                      <li><a href="#">item 1.5.3</a></li>
-                      <li><a href="#">item 1.5.4</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="has-arrow" href="#" aria-expanded="false">Menu 2</a>
-                <ul aria-expanded="false">
-                  <li><a href="#">item 2.1</a></li>
-                  <li><a href="#">item 2.2</a></li>
-                  <li><a href="#">item 2.3</a></li>
-                  <li><a href="#">item 2.4</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-
-
-
  <script>
    $(function () {
-
-       $('#menu1').metisMenu();
-
-       $('#menu2').metisMenu({
-           toggle: false
-       });
-
-       $('#menu3').metisMenu();
-
+      $('#menu1').metisMenu();
    });
  </script>
-
-
-
-
 
   </body>
 
